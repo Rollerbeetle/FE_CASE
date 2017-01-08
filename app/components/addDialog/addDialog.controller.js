@@ -17,7 +17,7 @@ export default class AddDialogController{
 
   save(wine) {
     this.$mdDialog.hide({
-      question
+      wine
     });
   }
 }

@@ -10,11 +10,11 @@
   "author": "Emil Skovsen",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"npm run serve\" \"npm run watch\"",
+    "start": "lite-server",
     "test": "echo \"ERROR: no test",
     "build": "webpack --progress --colors",
     "build:watch": "webpack --progress --colors --watch",
-    "serve": "lite-server"
+    "serve": "concurrently \"lite-server\" \"npm run build:watch\""
   },
   "devDependencies": {
     "babel-core": "^6.21.0",

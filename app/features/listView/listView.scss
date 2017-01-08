@@ -1,8 +1,12 @@
 
 .listView {
   background-color: #c9c9c9;
+  height: 100%;
 
   &__wrapper {
+    margin-top: 30px;
+    padding: 10px 20px;
+    min-height: 500px;
     background-color: white;
   }
 }

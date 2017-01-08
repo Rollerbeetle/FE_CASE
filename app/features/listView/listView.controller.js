@@ -12,11 +12,15 @@ export default class ListViewController {
             {
                 name: '1',
                 price: '2',
-                vinyard: 'somewhere'
+                vinyard: 'somewhere',
+                year: 1992,
+                amount: 2
             }, {
                 name: '3',
                 price: '4',
-                vinyard: 'somewhereelse'
+                vinyard: 'somewhereelse',
+                year: 1999,
+                amount: 3
             }
         ]
 
@@ -38,8 +42,8 @@ export default class ListViewController {
             clickOutsideToClose: true
         });
 
-        dialog.then(wine => {
-          this.wines.push(wine);
+        dialog.then(response => {
+          this.wines.push(response.wine);
         })
 
     }

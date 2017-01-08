@@ -6,6 +6,6 @@ export default class ListViewController{
   }
   /* @ngInject */
   constructor() {
-
+    this.expanded = false;
   }
 }
