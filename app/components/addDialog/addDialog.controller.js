@@ -8,7 +8,7 @@ export default class AddDialogController{
   constructor($mdDialog) {
     this.$mdDialog = $mdDialog;
 
-    this.wine = {};
+    this.wine = {amount: 1};
   }
 
   cancel() {

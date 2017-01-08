@@ -10,17 +10,21 @@ export default class ListViewController {
 
         this.wines = [
             {
-                name: '1',
-                price: '2',
-                vinyard: 'somewhere',
-                year: 1992,
+                name: 'Lewis',
+                type: 'Cabernet Sauvignon',
+                vinyard: 'Napa Valley ',
+                year: 2013,
+                price: 90,
+                description: "Remarkably elegant and refined for a wine of this size and depth, with tiers of plum, blackberry and currant flavors, as well as subtle touches of black licorice that remain pure and graceful on the long, lingering aftertaste. Drink now through 2028. 1,600 cases made.",
                 amount: 2
             }, {
-                name: '3',
-                price: '4',
-                vinyard: 'somewhereelse',
-                year: 1999,
-                amount: 3
+                name: 'Mollydooker',
+                type: 'Shiraz',
+                vinyard: 'McLaren Vale',
+                year: 2014,
+                price: 75,
+                description:"Bold, expressive, velvety and generous, with ripe cherry and plum flavors at the core. Complex details of vanilla bean, licorice, Earl Grey tea and gingerbread explode on the long finish. Drink now through 2030. 1,467 cases made. ",
+                amount: 5
             }
         ]
 
