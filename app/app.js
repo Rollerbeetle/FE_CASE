@@ -9,6 +9,9 @@ import ngAria from 'angular-aria';
 
 import listViewFeature from './features/listView';
 
+import wineComponent from './components/wine';
+import addDialogComponent from './components/addDialog';
+
 import routes from  './app.routes';
 
 
@@ -19,6 +22,9 @@ export default angular.module('app', [
     ngAria,
 
     listViewFeature,
+
+    wineComponent,
+    addDialogComponent
   ])
   .config(routes)
   .name

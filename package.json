@@ -12,8 +12,8 @@
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
     "test": "echo \"ERROR: no test",
-    "bundle": "webpack",
-    "watch": "webpack --watch",
+    "build": "webpack --progress --colors",
+    "build:watch": "webpack --progress --colors --watch",
     "serve": "lite-server"
   },
   "devDependencies": {

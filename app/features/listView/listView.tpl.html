@@ -1,4 +1,8 @@
-<div class="listView" layout="row" layout-align="center start">
-  HELLO WORLD
-  <md-button class="mb-primary">HELLO WORLD</md-button>
+<div class="listView" layout="column" layout-align="start center">
+  <div class="listView__wrapper" layout="column" layout-align="start start">
+    <div class="listView__wine" layout="row" layout-align="start start" ng-repeat="wine in vm.wines">
+      <wine wine="wine"></wine>
+    </div>
+    <md-button class="md-primary" ng-click="vm.openAddWine($event)">Add Wine</md-button>
+  </div>
 </div>

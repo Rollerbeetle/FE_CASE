@@ -1,0 +1,61 @@
+<md-dialog class="wine-modal-wrapper">
+    <form name="wineForm" class="wine-modal" aria-label="Add Wine Form" layout="column" layout-align="start start">
+
+        <md-dialog-content class="wine-modal__content fullwidth" layout="column" layout-align="start start">
+
+          <div class="wine-modal__row" layout="row" layout-align="start start">
+            <md-input-container>
+                <label>Name</label>
+                <input type="text" ng-model="vm.wine.name" required>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Type</label>
+                <input type="text" ng-model="vm.wine.type" required>
+            </md-input-container>
+
+          </div>
+
+          <div class="wine-modal__row" layout="row" layout-align="start start">
+            <md-input-container>
+                <label>Year</label>
+                <input type="number" ng-model="vm.wine.year" required md-maxlength="4">
+            </md-input-container>
+
+            <md-input-container>
+                <label>Country</label>
+                <input type="text" ng-model="vm.wine.country" required>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Vinyard</label>
+                <input type="text" ng-model="vm.wine.vinyard" >
+            </md-input-container>
+          </div>
+
+          <div class="wine-modal__row" layout="row" layout-align="start start">
+
+            <md-input-container>
+                <label>Description</label>
+                <input type="text" ng-model="vm.wine.description" md-maxlength="240">
+            </md-input-container>
+
+            <md-input-container>
+                <label>Price</label>
+                <input type="number" ng-model="color">
+            </md-input-container>
+          </div>
+
+
+        </md-dialog-content>
+        <span flex></span>
+
+        <md-dialog-actions class="wine-modal__actions fullwidth" layout="row" layout-align="start center">
+
+            <span flex></span>
+
+            <md-button class="md-primary" ng-click="vm.cancel()">Cancel</md-button>
+            <md-button class="md-secondary" ng-disabled="wineForm.$invalid" ng-click="vm.save(vm.wine)">Save</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
