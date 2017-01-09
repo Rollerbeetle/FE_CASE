@@ -1,0 +1,41 @@
+{
+  "name": "FE_CASE",
+  "version": "1.0.0",
+  "description": "Case For JobApplication",
+  "main": "index.js",
+  "repository": {
+    "url": "https://rollerbeetle@github.com/Rollerbeetle/FE_CASE.git",
+    "type": "git"
+  },
+  "author": "Emil Skovsen",
+  "license": "MIT",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"ERROR: no test",
+    "build": "webpack --progress --colors",
+    "build:watch": "webpack --progress --colors --watch",
+    "serve": "concurrently \"lite-server\" \"npm run build:watch\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "concurrently": "^3.1.0",
+    "css-loader": "^0.26.1",
+    "html-loader": "^0.4.4",
+    "lite-server": "^2.2.2",
+    "ng-annotate": "^1.2.1",
+    "ng-annotate-webpack-plugin": "^0.1.3",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-aria": "^1.6.1",
+    "angular-material": "^1.1.1",
+    "angular-ui-router": "^0.3.2"
+  }
+}

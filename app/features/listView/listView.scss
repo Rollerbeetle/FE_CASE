@@ -1,0 +1,17 @@
+
+.listView {
+  background-color: #c9c9c9;
+  height: 100%;
+
+  &__wrapper {
+    margin-top: 30px;
+    padding: 10px 20px;
+    min-height: 500px;
+    max-height: 90vh;
+    background-color: white;
+  }
+
+  &__wine {
+    overflow: auto;
+  }
+}

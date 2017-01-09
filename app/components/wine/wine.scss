@@ -1,0 +1,21 @@
+
+
+.wine {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  max-width: 960px;
+  width: 80vw;
+  border: 1px solid #c9c9c9;
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__value {
+    margin-left: 5px;
+  }
+
+  &__info{
+    margin: 0 10px;
+  }
+}

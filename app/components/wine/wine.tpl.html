@@ -1,0 +1,75 @@
+<div class="wine" layout="column" layout-align="start start">
+  <div class="wine__card" ng-hide="vm.expanded" layout="column" layout-align="start start">
+    <div layout="row" layout-align="start center">
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Name: </span>
+        <span class="wine__value">{{::vm.wine.name}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Type: </span>
+        <span class="wine__value">{{::vm.wine.type}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Country: </span>
+        <span class="wine__value">{{::vm.wine.country}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Year: </span>
+        <span class="wine__value">{{::vm.wine.year}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+          <span class="wine__label">Amount: </span>
+          <span class="wine__value">{{vm.wine.amount}}</span>
+      </div>
+      <md-button class="md-primary" ng-click="vm.expanded = true">Show Details</md-button>
+    </div>
+  </div>
+
+  <div class="wine__card" ng-show="vm.expanded" layout="column" layout-align="start start">
+    <div layout="row" layout-align="start center">
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Name: </span>
+        <span class="wine__value">{{::vm.wine.name}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Type: </span>
+        <span class="wine__value">{{::vm.wine.type}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Country: </span>
+        <span class="wine__value">{{::vm.wine.country}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Year: </span>
+        <span class="wine__value">{{::vm.wine.year}}</span>
+      </div>
+    </div>
+    <div layout="row" layout-align="start center">
+      <div class="wine__info" layout="row" layout-align="start start">
+          <span class="wine__label">Amount: </span>
+          <span class="wine__value">{{vm.wine.amount}}</span>
+      </div>
+      <div layout="row" layout-align="start start">
+        <md-button class="md-primary" ng-disabled="vm.wine.amount < 1" ng-click="vm.wine.amount = vm.wine.amount - 1">-</md-button>
+        <md-button class="md-primary" ng-click="vm.wine.amount = vm.wine.amount + 1">+</md-button>
+      </div>
+    </div>
+    <div layout="row" layout-align="start center">
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Vinyard: </span>
+        <span class="wine__value">{{::vm.wine.vinyard}}</span>
+      </div>
+      <div class="wine__info" layout="row" layout-align="start start">
+        <span class="wine__label">Price: </span>
+        <span class="wine__value">{{::vm.wine.price}}</span>
+      </div>
+    </div>
+    <div layout="row" layout-align="start start">
+      <div class="wine__info" layout="column" layout-align="start start">
+        <span class="wine__label">Description: </span>
+        <span class="wine__value">{{::vm.wine.description}}</span>
+      </div>
+    </div>
+    <md-button class="md-primary" ng-click="vm.expanded = false">Hide Details</md-button>
+  </div>
+</div>
