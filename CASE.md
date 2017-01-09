@@ -22,7 +22,8 @@ Din løsning vurderes på
 *   Kode arkitektur og organisering
 *   Virker løsningen?
 *   Implementering af egne kreative idéer (dvs ikke på design/layout)
-*   Regler
+
+Regler
 
 Du må selv bestemme hvilke værktøjer du benytter.
 Det skal være tydeligt noteret hvis der er dele af koden du ikke selv har skrevet

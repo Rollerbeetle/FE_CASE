@@ -32,6 +32,5 @@ module.exports = {
     plugins: [
       new ngAnnotatePlugin({
             add: true,
-            // other ng-annotate options here
         })]
 }
