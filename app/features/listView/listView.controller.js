@@ -8,11 +8,14 @@ export default class ListViewController {
     /* @ngInject */
     constructor($mdDialog) {
 
+        this.searchText = "";
+
         this.wines = [
             {
                 name: 'Lewis',
                 type: 'Cabernet Sauvignon',
                 vinyard: 'Napa Valley ',
+                country: 'USA',
                 year: 2013,
                 price: 90,
                 description: "Remarkably elegant and refined for a wine of this size and depth, with tiers of plum, blackberry and currant flavors, as well as subtle touches of black licorice that remain pure and graceful on the long, lingering aftertaste. Drink now through 2028. 1,600 cases made.",
@@ -21,6 +24,7 @@ export default class ListViewController {
                 name: 'Mollydooker',
                 type: 'Shiraz',
                 vinyard: 'McLaren Vale',
+                country: "Australia",
                 year: 2014,
                 price: 75,
                 description:"Bold, expressive, velvety and generous, with ripe cherry and plum flavors at the core. Complex details of vanilla bean, licorice, Earl Grey tea and gingerbread explode on the long finish. Drink now through 2030. 1,467 cases made. ",

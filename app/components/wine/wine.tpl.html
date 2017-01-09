@@ -1,6 +1,6 @@
 <div class="wine" layout="column" layout-align="start start">
   <div class="wine__card" ng-hide="vm.expanded" layout="column" layout-align="start start">
-    <div layout="row" layout-align="start start">
+    <div layout="row" layout-align="start center">
       <div class="wine__info" layout="row" layout-align="start start">
         <span class="wine__label">Name: </span>
         <span class="wine__value">{{::vm.wine.name}}</span>
@@ -21,13 +21,12 @@
           <span class="wine__label">Amount: </span>
           <span class="wine__value">{{vm.wine.amount}}</span>
       </div>
+      <md-button class="md-primary" ng-click="vm.expanded = true">Show Details</md-button>
     </div>
-    <span flex></span>
-    <md-button class="md-primary" ng-click="vm.expanded = true">Show Details</md-button>
   </div>
 
   <div class="wine__card" ng-show="vm.expanded" layout="column" layout-align="start start">
-    <div layout="row" layout-align="start start">
+    <div layout="row" layout-align="start center">
       <div class="wine__info" layout="row" layout-align="start start">
         <span class="wine__label">Name: </span>
         <span class="wine__value">{{::vm.wine.name}}</span>
@@ -53,7 +52,7 @@
         <md-button class="md-primary" ng-click="vm.wine.amount = vm.wine.amount + 1">+</md-button>
       </div>
     </div>
-    <div layout="row" layout-align="start start">
+    <div layout="row" layout-align="start center">
       <div class="wine__info" layout="row" layout-align="start start">
         <span class="wine__label">Vinyard: </span>
         <span class="wine__value">{{::vm.wine.vinyard}}</span>

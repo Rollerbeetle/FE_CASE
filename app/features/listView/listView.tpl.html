@@ -1,6 +1,7 @@
 <div class="listView" layout="column" layout-align="start center">
   <div class="listView__wrapper" layout="column" layout-align="start start">
-    <div class="listView__wine" layout="row" layout-align="start start" ng-repeat="wine in vm.wines">
+    <label>Search: <input ng-model="vm.searchText" placeholder="Type here to search.."></label>
+    <div class="listView__wine" layout="row" layout-align="start start" ng-repeat="wine in vm.wines | filter:vm.searchText">
       <wine wine="wine"></wine>
     </div>
     <md-button class="md-primary" ng-click="vm.openAddWine($event)">Add Wine</md-button>
